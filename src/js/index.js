@@ -4,12 +4,16 @@ const output = document.querySelector(".output");
 
 function checkForBirthdayAndLuckyNumber() {
     const dob = dateOfBirth.value;
-
+    showOutput();
     if(dob === "") {
         output.innerText = "You did not enter your Birthdate!!";
     } else {
         birthDateCombination(dob);
     }
+}
+
+function showOutput() {
+    output.style.display = "block";
 }
 
 function birthDateCombination(dob) {
