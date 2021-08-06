@@ -1,5 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
 
+:root {
+    --primary-color: rgb(228, 174, 13);
+    --secondary-color: #002147;
+    --btn-text-color: white;
+    --privacy-notice: #FF0000;
+    --box-shadow: #888;
+}
+
 * {
     padding: 0;
     margin: 0;
@@ -7,4 +15,116 @@
 
 body {
     font-family: 'Poppins', sans-serif;
+}
+
+.container {
+    width: 100%;
+    max-width: 600px;
+    min-height: 200px;
+    padding: 1rem 2rem;
+    margin: 0rem auto;
+    box-sizing: border-box;
+    background-color: var(--primary-color);
+    text-align: center;
+}
+
+.container #app-heading {
+    padding: 2rem 0rem;
+}
+
+.container #description {
+    font-size: 1.5rem;
+    font-weight: 700;
+    padding-bottom: 1.5rem;
+}
+
+.container #more-description {
+    margin: 0.5rem 0rem;
+    padding: 1rem 0rem;
+}
+
+.container label {
+    font-size: 1.3rem;
+}
+
+.container input {
+    width: 45%;
+    height: 45px;
+    padding: 1rem;
+    display: block;
+    box-sizing: border-box;
+    border: 2px solid var(--secondary-color);
+    margin: 1rem auto;
+} 
+
+.container #check-btn {
+    font-size: 1.2rem;
+    padding: 0.5rem 1rem;
+    background-color: var(--secondary-color);
+    color: var(--btn-text-color);
+    border-radius: 1.5rem;
+}
+
+.container #check-btn:hover {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    border: 2px solid var(--secondary-color);
+}
+
+.container .output {
+    margin: 2rem auto;
+    font-size: 1.3rem;
+    padding: 1rem 0rem;
+    width: 85%;
+    border: 2px solid var(--secondary-color);
+}
+
+/* Footer */
+.footer {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    padding: 0.5rem 0rem;
+    text-align: center;
+    width: 85%;
+    margin: 2.5rem auto 0rem auto;
+    box-shadow: 0px 0px 10px 2px var(--box-shadow);
+}
+
+.footer .footer-content {
+    padding: 0.5rem 1rem;
+    text-align: center;
+}
+
+.footer-content .other-page-social-media {
+    padding: 0rem 1rem;
+    margin: 0.5rem 0rem;
+}
+
+.footer-content #other-page-footer-para {
+    font-size: 1.2rem;
+    margin: 0.5rem 1rem;
+}
+
+.footer-content .other-page-social-list-inline {
+    display: inline-block;
+    text-align: center;
+    padding: 0rem 0.3rem;
+}
+
+.footer-content .other-page-social-list-inline .icon {
+    height: 2.5rem;
+    width: 2.5rem;
+    border-radius: 50%;
+    display: table-cell;
+    vertical-align: middle;
+    background: var(--primary-color);
+    color: var(--secondary-color);
+}
+
+.footer-content .other-page-social-list-inline .social-link {
+    text-decoration: none;
+}
+
+.footer-content .other-page-social-list-inline .icon ion-icon {
+    font-size: 1.6rem;
 }

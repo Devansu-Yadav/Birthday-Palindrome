@@ -4,23 +4,61 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lucky Birthday Checker</title>
+    <title>Birthday Palindrome?</title>
     <link rel="stylesheet" href="./src/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+    <script type="module" src="https://unpkg.com/ionicons@5.1.2/dist/ionicons/ionicons.esm.js" data-stencil-namespace="ionicons"></script>
+    <script nomodule="" src="https://unpkg.com/ionicons@5.1.2/dist/ionicons/ionicons.js" data-stencil-namespace="ionicons"></script>
 </head>
 <body>
-    <h1>Is Your Birthday Lucky?</h1>
     <div class="container">
-        <p>Enter your Birthday</p>
+        <h1 id="app-heading">Is Your Birthdate a Palindrome?</h1>
+        <p id="description">Enter your Birthday and we will tell you if your Birthdate is a palindrome</p>
+        <p id="more-description">
+            This app checks your birthdate in 4 formats yyyy-mm-dd, dd-mm-yyyy, mm-dd-yy, m-dd-yyyy <br>
+e.g. if your birthdate is 01 Aug 1995, then app will check for 19950801, 01081995, 080195, 1081995
+        </p>
         <label for="date-of-birth">Select your Birth Date:</label>
-        <input id="date-of-birth" type="date" />
+        <input id="date-of-birth" type="date" name="begin" placeholder="dd-mm-yyyy"/>
 
         <button id="check-btn">check</button>
 
         <div class="output"></div>
 
-        <div class="social-media">
-            My Social Media Icons as Footer
-        </div>
+        <footer class="footer">
+            <div class="footer-content container-center">
+                <ul class="other-page-social-media">
+                    <li class="other-page-social-list-inline">
+                        <a class="icon social-link" href="mailto:devansuyadav@gmail.com">
+                            <ion-icon name="mail-outline" role="img" class="md hydrated" aria-label="mail outline"></ion-icon>
+                        </a>
+                    </li>
+                    <li class="other-page-social-list-inline">
+                        <a class="icon social-link" href="https://github.com/Devansu-Yadav">
+                            <ion-icon name="logo-github" role="img" class="md hydrated" aria-label="logo github"></ion-icon>
+                        </a>
+                    </li>
+                    <li class="other-page-social-list-inline">
+                        <a class="icon social-link" href="https://www.linkedin.com/in/devansu-yadav/">
+                            <ion-icon name="logo-linkedin" role="img" class="md hydrated" aria-label="logo linkedin"></ion-icon>
+                        </a>
+                    </li>
+    
+                    <li class="other-page-social-list-inline">
+                        <a class="icon social-link" href="https://twitter.com/DevanshYtweets">
+                            <ion-icon name="logo-twitter" role="img" class="md hydrated" aria-label="logo twitter"></ion-icon>
+                        </a>
+                    </li>
+    
+                    <li class="other-page-social-list-inline">
+                        <a class="icon social-link" href="https://devansuyadav.medium.com/">
+                            <ion-icon name="logo-medium" role="img" class="md hydrated" aria-label="logo medium"></ion-icon>
+                        </a>
+                    </li>
+                </ul>
+                <p id="other-page-footer-para">Made with 🖤 by Devansu Yadav</p>
+            </div>
+        </footer>
     </div>
     <script type="text/javascript" src="src/js/index.js"></script>
 </body>
