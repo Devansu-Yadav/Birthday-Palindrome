@@ -85,7 +85,7 @@ body {
     color: var(--secondary-color);
     padding: 0.5rem 0rem;
     text-align: center;
-    width: 85%;
+    width: 100%;
     margin: 2.5rem auto 0rem auto;
     box-shadow: 0px 0px 10px 2px var(--box-shadow);
 }
@@ -127,4 +127,29 @@ body {
 
 .footer-content .other-page-social-list-inline .icon ion-icon {
     font-size: 1.6rem;
+}
+
+/* Responsive CSS for Mobile screens */
+@media only screen and (max-width: 440px) {
+    .container #description {
+        font-size: 1.2rem;
+    }
+
+    .footer-content .other-page-social-list-inline .icon {
+        width: 1.7rem;
+        height: 1.7rem;
+    }
+
+    .footer-content .other-page-social-list-inline {
+        padding: 0;
+    }
+
+    .footer-content .other-page-social-list-inline .icon ion-icon {
+        font-size: 1.2rem;
+    }
+
+    .footer-content #other-page-footer-para {
+        font-size: 0.8rem;
+        margin: 0.5rem;
+    }    
 }
