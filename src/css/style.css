@@ -79,6 +79,16 @@ body {
     border: 2px solid var(--secondary-color);
 }
 
+.output h1 {
+    font-size: 1.3rem;
+}
+
+.output span {
+    color: red;
+    background-color: #fff;
+    padding: 0 0.2rem;
+}
+
 /* Footer */
 .footer {
     background-color: var(--primary-color);
